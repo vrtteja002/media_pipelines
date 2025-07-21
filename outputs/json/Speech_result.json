@@ -1,0 +1,126 @@
+{
+  "pipeline_type": "audio",
+  "input_file": "temp\\Speech.mp3",
+  "steps": {
+    "1_transcription": {
+      "status": "success",
+      "text": "hi this is Ravi I'm currently working as graduate research assistant at Kansas State University so I'm currently focusing on mainly machine learning deep learning and computer vision research projects like this is classification of plant leaves and percentage of nitrogen prediction of nitrogen in soil and also developed a proof of concept for detection of weeds from soil and corn plant and achieved funding of like around $40,000 from CNH industries along with this I have done two internships at reality AI lab and fellowship dot here",
+      "language": "english",
+      "duration": 39.060001373291016,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 39.060001373291016,
+          "text": "hi this is Ravi I'm currently working as graduate research assistant at Kansas State University so I'm currently focusing on mainly machine learning deep learning and computer vision research projects like this is classification of plant leaves and percentage of nitrogen prediction of nitrogen in soil and also developed a proof of concept for detection of weeds from soil and corn plant and achieved funding of like around $40,000 from CNH industries along with this I have done two internships at reality AI lab and fellowship dot here"
+        }
+      ],
+      "metadata": {
+        "audio_file": "Speech.mp3",
+        "model": "openai-whisper-1",
+        "confidence": "high",
+        "step": "1_speech_to_text"
+      }
+    },
+    "2_intent_analysis": {
+      "status": "success",
+      "original_text": "hi this is Ravi I'm currently working as graduate research assistant at Kansas State University so I'm currently focusing on mainly machine learning deep learning and computer vision research projects like this is classification of plant leaves and percentage of nitrogen prediction of nitrogen in soil and also developed a proof of concept for detection of weeds from soil and corn plant and achieved funding of like around $40,000 from CNH industries along with this I have done two internships at reality AI lab and fellowship dot here",
+      "analysis": {
+        "intent": "general_request",
+        "intent_description": "Unable to parse specific intent",
+        "entities": {
+          "named_entities": [],
+          "temporal": [],
+          "numerical": [],
+          "products_services": [
+            "hi this is Ravi I'm currently working as graduate research assistant at Kansas State University so I'm currently focusing on mainly machine learning deep learning and computer vision research projects like this is classification of plant leaves and percentage of nitrogen prediction of nitrogen in soil and also developed a proof of concept for detection of weeds from soil and corn plant and achieved funding of like around $40,000 from CNH industries along with this I have done two internships at reality AI lab and fellowship dot here"
+          ],
+          "actions": []
+        },
+        "parameters": {
+          "required": {
+            "original_text": "hi this is Ravi I'm currently working as graduate research assistant at Kansas State University so I'm currently focusing on mainly machine learning deep learning and computer vision research projects like this is classification of plant leaves and percentage of nitrogen prediction of nitrogen in soil and also developed a proof of concept for detection of weeds from soil and corn plant and achieved funding of like around $40,000 from CNH industries along with this I have done two internships at reality AI lab and fellowship dot here"
+          },
+          "optional": {},
+          "context": {}
+        },
+        "sentiment": "neutral",
+        "urgency": "low",
+        "confidence": "low",
+        "confidence_reasoning": "JSON parsing failed, using fallback analysis",
+        "suggested_response": "I heard you say: hi this is Ravi I'm currently working as graduate research assistant at Kansas State University so I'm currently focusing on mainly machine learning deep learning and computer vision research projects like this is classification of plant leaves and percentage of nitrogen prediction of nitrogen in soil and also developed a proof of concept for detection of weeds from soil and corn plant and achieved funding of like around $40,000 from CNH industries along with this I have done two internships at reality AI lab and fellowship dot here. Could you help me understand what you'd like me to help you with?",
+        "next_steps": [
+          "request_clarification",
+          "provide_general_help"
+        ],
+        "category": "general",
+        "subcategory": "unclear_request",
+        "requires_clarification": true,
+        "clarification_questions": [
+          "Could you please rephrase your request?",
+          "What specific help do you need?"
+        ],
+        "extracted_keywords": [
+          "hi",
+          "this",
+          "is",
+          "Ravi",
+          "I'm"
+        ]
+      },
+      "metadata": {
+        "model": "gpt-4o",
+        "processor": "intent_analyzer",
+        "step": "2_intent_analysis",
+        "prompt_version": "v2.0_enhanced"
+      }
+    },
+    "3_text_to_speech": {
+      "status": "success",
+      "text": "I heard you say: hi this is Ravi I'm currently working as graduate research assistant at Kansas State University so I'm currently focusing on mainly machine learning deep learning and computer vision research projects like this is classification of plant leaves and percentage of nitrogen prediction of nitrogen in soil and also developed a proof of concept for detection of weeds from soil and corn plant and achieved funding of like around $40,000 from CNH industries along with this I have done two internships at reality AI lab and fellowship dot here. Could you help me understand what you'd like me to help you with?",
+      "audio_file": "outputs/audio\\response_Speech.wav",
+      "filename": "response_Speech.wav",
+      "metadata": {
+        "engine": "pyttsx3",
+        "processor": "tts_synthesizer",
+        "text_length": 622,
+        "step": "3_text_to_speech"
+      }
+    }
+  },
+  "final_output": {
+    "original_audio": "temp\\Speech.mp3",
+    "transcribed_text": "hi this is Ravi I'm currently working as graduate research assistant at Kansas State University so I'm currently focusing on mainly machine learning deep learning and computer vision research projects like this is classification of plant leaves and percentage of nitrogen prediction of nitrogen in soil and also developed a proof of concept for detection of weeds from soil and corn plant and achieved funding of like around $40,000 from CNH industries along with this I have done two internships at reality AI lab and fellowship dot here",
+    "detected_intent": "general_request",
+    "extracted_entities": {
+      "named_entities": [],
+      "temporal": [],
+      "numerical": [],
+      "products_services": [
+        "hi this is Ravi I'm currently working as graduate research assistant at Kansas State University so I'm currently focusing on mainly machine learning deep learning and computer vision research projects like this is classification of plant leaves and percentage of nitrogen prediction of nitrogen in soil and also developed a proof of concept for detection of weeds from soil and corn plant and achieved funding of like around $40,000 from CNH industries along with this I have done two internships at reality AI lab and fellowship dot here"
+      ],
+      "actions": []
+    },
+    "sentiment": "neutral",
+    "response_text": "I heard you say: hi this is Ravi I'm currently working as graduate research assistant at Kansas State University so I'm currently focusing on mainly machine learning deep learning and computer vision research projects like this is classification of plant leaves and percentage of nitrogen prediction of nitrogen in soil and also developed a proof of concept for detection of weeds from soil and corn plant and achieved funding of like around $40,000 from CNH industries along with this I have done two internships at reality AI lab and fellowship dot here. Could you help me understand what you'd like me to help you with?",
+    "response_audio": "outputs/audio\\response_Speech.wav",
+    "confidence": "low",
+    "processing_steps": [
+      "speech_to_text",
+      "intent_analysis",
+      "response_generation",
+      "text_to_speech"
+    ],
+    "metadata": {
+      "total_steps": 4,
+      "pipeline_type": "complete_audio_processing",
+      "success": true,
+      "processing_time_seconds": 11.65
+    }
+  },
+  "performance": {
+    "transcription_time": 2.894454002380371,
+    "intent_analysis_time": 8.37546420097351,
+    "tts_time": 0.37845706939697266,
+    "total_time": 11.648375272750854
+  }
+}

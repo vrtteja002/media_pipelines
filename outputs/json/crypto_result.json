@@ -1,0 +1,72 @@
+{
+  "pipeline_type": "image",
+  "input_file": "temp\\crypto.png",
+  "steps": {
+    "1_document_extraction": {
+      "status": "success",
+      "image_file": "temp\\crypto.png",
+      "extraction": {
+        "document_type": "form",
+        "extracted_text": "Sure, here is the extracted text from the image:\n\n---\n\n**Robinhood Markets Inc as agent for Robinhood Crypto LLC**  \n85 Willow Road  \nMenlo Park, CA 94025  \nCustomer Service:  650-940-2700  \n\n**Tax Information**  \nAccount 842604985C  \n\n**Statement Date:**  02/11/2025  \n\n**2024**  \n\nRavi teja Vempati  \n2050 Kerr Dr  \nManhattan, KS 66502  \n\nPAYER'S TIN: 46-4364776  \nRECIPIENT'S TIN: XXX-XX-7232  \n\n11 - [ ] FATCA filing requirement (see instructions)  \n**Summary Information**  \n\n**DIVIDENDS AND DISTRIBUTIONS**  **2024 1099-DIV***  OMB No. 1545-0110  \n1a- Total ordinary dividends (includes lines 1b, 5, 2e) 0.00  \n1b- Qualified dividends 0.00  \n2a- Total capital gain distributions (includes lines 2b, 2c, 2d, 2f) 0.00  \n2b- Unrecaptured Section 1250 gain 0.00  \n2c- Section 1202 gain 0.00  \n2d- Collectibles (28%) gain 0.00  \n2e- Section 897 ordinary dividends 0.00  \n2f- Section 897 capital gain 0.00  \n3- Nondividend distributions 0.00  \n4- Federal income tax withheld 0.00  \n5- Section 199A dividends 0.00  \n6- Investment expenses 0.00  \n8- Foreign country or US possession:  7- Foreign tax paid: 0.00  \n9- Cash liquidation distributions 0.00  \n10- Noncash liquidation distributions 0.00  \n12- Exempt-interest dividends (includes line 13) 0.00  \n13- Specified private activity bond interest dividends (AMT) 0.00  \n\n**MISCELLANEOUS INFORMATION**  **2024 1099-MISC***  OMB No. 1545-0115  \n2- Royalties 0.00  \n3- Other income 0.00  \n4- Federal income tax withheld 0.00  \n8- Substitute payments in lieu of dividends or interest 0.00  \n\n**SECTION 1256 CONTRACTS**  **2024 1099-B***  OMB No. 1545-0715  \n8- Profit or (loss) realized in 2024 on closed contracts 0.00  \n9- Unrealized profit or (loss) on open contracts-12/31/2023 0.00  \n10- Unrealized profit or (loss) on open contracts-12/31/2024 0.00  \n11- Aggregate profit or (loss) on contracts 0.00  \n\n*This is important tax information and is being furnished to the Internal Revenue Service.  \nIf you are required to file a return, a negligence penalty or other sanction may be imposed on  \nyou if this income is taxable and the IRS determines that it has not been reported.*\n\n**SUMMARY OF PROCEEDS, GAINS & LOSSES, ADJUSTMENTS AND WITHHOLDING**  \n\nTerm         Form 8949 type    Proceeds    Cost basis    Market discount    Wash sale loss disallowed    Net gain or loss(-)  \nShort        A (basis reported to the IRS)     0.00            0.00              0.00                       0.00                    0.00  \nShort        B (basis not reported to the IRS) 3,877.37        3,823.78         0.00                       0.00                   53.59  \nShort        C (Form 1099-B not received)      0.00            0.00              0.00                       0.00                    0.00  \n\nTotal Short-term                              3,877.37         3,823.78         0.00                              0.00                   53.59  \n\nLong         D (basis reported to the IRS)     0.00            0.00              0.00                              0.00                  0.00  \nLong         E (basis not reported to the IRS) 0.00            0.00              0.00                              0.00                  0.00  \nLong         F (Form 1099-B not received)      0.00            0.00              0.00                              0.00                  0.00  \n\nTotal Long-term                               0.00             0.00               0",
+        "structured_fields": {
+          "phone": "650-940-2700",
+          "address": "85 Willow Road",
+          "company": "**Robinhood Markets Inc as agent for Robinhood Crypto LLC**"
+        },
+        "entities": [
+          "897 ord",
+          "85 Willow Road",
+          "8949 type    Proceeds    Cost",
+          "2050 Kerr Dr",
+          "**Robinhood Markets Inc as agent for Robinhood Crypto LLC**",
+          "650-940-2700",
+          "94025  \nCust"
+        ],
+        "confidence": "high",
+        "metadata": {
+          "processing_method": "direct_text_extraction"
+        }
+      },
+      "metadata": {
+        "model": "gpt-4o-vision",
+        "processor": "document_extractor"
+      }
+    }
+  },
+  "final_output": {
+    "input_image": "temp\\crypto.png",
+    "document_type": "form",
+    "extracted_text": "Sure, here is the extracted text from the image:\n\n---\n\n**Robinhood Markets Inc as agent for Robinhood Crypto LLC**  \n85 Willow Road  \nMenlo Park, CA 94025  \nCustomer Service:  650-940-2700  \n\n**Tax Information**  \nAccount 842604985C  \n\n**Statement Date:**  02/11/2025  \n\n**2024**  \n\nRavi teja Vempati  \n2050 Kerr Dr  \nManhattan, KS 66502  \n\nPAYER'S TIN: 46-4364776  \nRECIPIENT'S TIN: XXX-XX-7232  \n\n11 - [ ] FATCA filing requirement (see instructions)  \n**Summary Information**  \n\n**DIVIDENDS AND DISTRIBUTIONS**  **2024 1099-DIV***  OMB No. 1545-0110  \n1a- Total ordinary dividends (includes lines 1b, 5, 2e) 0.00  \n1b- Qualified dividends 0.00  \n2a- Total capital gain distributions (includes lines 2b, 2c, 2d, 2f) 0.00  \n2b- Unrecaptured Section 1250 gain 0.00  \n2c- Section 1202 gain 0.00  \n2d- Collectibles (28%) gain 0.00  \n2e- Section 897 ordinary dividends 0.00  \n2f- Section 897 capital gain 0.00  \n3- Nondividend distributions 0.00  \n4- Federal income tax withheld 0.00  \n5- Section 199A dividends 0.00  \n6- Investment expenses 0.00  \n8- Foreign country or US possession:  7- Foreign tax paid: 0.00  \n9- Cash liquidation distributions 0.00  \n10- Noncash liquidation distributions 0.00  \n12- Exempt-interest dividends (includes line 13) 0.00  \n13- Specified private activity bond interest dividends (AMT) 0.00  \n\n**MISCELLANEOUS INFORMATION**  **2024 1099-MISC***  OMB No. 1545-0115  \n2- Royalties 0.00  \n3- Other income 0.00  \n4- Federal income tax withheld 0.00  \n8- Substitute payments in lieu of dividends or interest 0.00  \n\n**SECTION 1256 CONTRACTS**  **2024 1099-B***  OMB No. 1545-0715  \n8- Profit or (loss) realized in 2024 on closed contracts 0.00  \n9- Unrealized profit or (loss) on open contracts-12/31/2023 0.00  \n10- Unrealized profit or (loss) on open contracts-12/31/2024 0.00  \n11- Aggregate profit or (loss) on contracts 0.00  \n\n*This is important tax information and is being furnished to the Internal Revenue Service.  \nIf you are required to file a return, a negligence penalty or other sanction may be imposed on  \nyou if this income is taxable and the IRS determines that it has not been reported.*\n\n**SUMMARY OF PROCEEDS, GAINS & LOSSES, ADJUSTMENTS AND WITHHOLDING**  \n\nTerm         Form 8949 type    Proceeds    Cost basis    Market discount    Wash sale loss disallowed    Net gain or loss(-)  \nShort        A (basis reported to the IRS)     0.00            0.00              0.00                       0.00                    0.00  \nShort        B (basis not reported to the IRS) 3,877.37        3,823.78         0.00                       0.00                   53.59  \nShort        C (Form 1099-B not received)      0.00            0.00              0.00                       0.00                    0.00  \n\nTotal Short-term                              3,877.37         3,823.78         0.00                              0.00                   53.59  \n\nLong         D (basis reported to the IRS)     0.00            0.00              0.00                              0.00                  0.00  \nLong         E (basis not reported to the IRS) 0.00            0.00              0.00                              0.00                  0.00  \nLong         F (Form 1099-B not received)      0.00            0.00              0.00                              0.00                  0.00  \n\nTotal Long-term                               0.00             0.00               0",
+    "structured_fields": {
+      "phone": "650-940-2700",
+      "address": "85 Willow Road",
+      "company": "**Robinhood Markets Inc as agent for Robinhood Crypto LLC**"
+    },
+    "extracted_entities": [
+      "897 ord",
+      "85 Willow Road",
+      "8949 type    Proceeds    Cost",
+      "2050 Kerr Dr",
+      "**Robinhood Markets Inc as agent for Robinhood Crypto LLC**",
+      "650-940-2700",
+      "94025  \nCust"
+    ],
+    "extraction_confidence": "high",
+    "processing_methods": [],
+    "processing_steps": [
+      "document_extraction",
+      "text_structuring",
+      "entity_extraction"
+    ],
+    "metadata": {
+      "total_steps": 1,
+      "pipeline_type": "complete_image_processing",
+      "success": true,
+      "processing_time_seconds": 47.12
+    }
+  },
+  "performance": {
+    "extraction_time": 47.12180948257446,
+    "total_time": 47.122344732284546
+  }
+}
